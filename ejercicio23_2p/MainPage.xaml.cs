@@ -25,7 +25,7 @@ namespace ejercicio23_2p
             var status3 = await Permissions.RequestAsync<Permissions.StorageWrite>();
             if (status != PermissionStatus.Granted & status2 != PermissionStatus.Granted & status3 != PermissionStatus.Granted)
             { 
-                return; // si no tiene los permisos no avanza
+                return;
             }
 
 
