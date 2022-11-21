@@ -13,6 +13,8 @@ namespace ejercicio23_2p.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListarAudioPage : ContentPage
     {
+        //Grupo #3
+
         private readonly AudioPlayer audioPlayer = new AudioPlayer();
         Models.AudioModel audio;
 
