@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ejercicio23_2p.Views.ListarAudioPage"
+             Title="Listado de notas de voz"
+             BackgroundColor="White">
+    <ContentPage.Content >
+        <StackLayout>
+            <Frame BackgroundColor="RoyalBlue">
+                <Label Text="Selecciona y desliza para mas opciones" HorizontalTextAlignment="Start" TextColor="White" FontSize="16"/>
+            </Frame>
+            <ListView x:Name="listaAudios" ItemTapped="listaAudios_ItemTapped" >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems >
+                                        <SwipeItem x:Name="btndelete" IconImageSource="botondelete.png" BackgroundColor="RoyalBlue" 
+                                                   Invoked="btndelete_Invoked"/>
+                                        <SwipeItem x:Name="btnplay" IconImageSource="botonplay.png" BackgroundColor="RoyalBlue"
+                                                   Invoked="btnplay_Invoked"/>
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+                                
+                                <StackLayout
+                                    BackgroundColor="White">
+                                    <Grid>
+                                        <Label Grid.Column="0"
+                                               Text="{Binding Id}" TextColor="Navy" FontSize="14" Margin="5"></Label>
+                                        <Label Grid.Column="1"
+                                               Text="{Binding Date}" TextColor="Navy" FontSize="14" Margin="5"> </Label>
+                                        <Label Grid.Column="2"
+                                               Text="{Binding Descripcion}" TextColor="Navy" FontSize="14" Margin="5"></Label>
+                                    </Grid>
+                                </StackLayout>
+                                
+                            </SwipeView>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
