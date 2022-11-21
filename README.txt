@@ -5,3 +5,4 @@ Integrantes Grupo #3:
 	- Maissa Sarmiento Castellanos - 202010050045
 	- Marcela Yorleni Trochez Flores - 201910060140
 	- Arnol Caballero Sarmiento - 201110210044
+	- Manuel Antonio Coto Tenorio - 201710120028
