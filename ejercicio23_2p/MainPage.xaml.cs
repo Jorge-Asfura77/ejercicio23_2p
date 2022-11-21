@@ -60,10 +60,6 @@ namespace ejercicio23_2p
                 await audioRecorderService.StopRecording();
                 saveAudio();
 
-                //if (await DisplayAlert("Nota de voz guardada", "¿Desea reproducir el audio?", "SI", "NO"))
-                //{
-                //    audioPlayer.Play(audioRecorderService.GetAudioFilePath());
-                //}
                 btnGrabar.IsVisible = true;
                 btnDetener.IsVisible = false;
 
